@@ -13,3 +13,12 @@ class LCArray:
             self.a = tmp
             self.a[self.cur_size] = n
             self.cur_size += 1
+
+    def pop_back(self):
+        self.cur_size -= 1
+
+    def size(self):
+        return self.cur_size
+    
+    def index(self, idx):
+        return self.a[idx]
