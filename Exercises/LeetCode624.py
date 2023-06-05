@@ -1,7 +1,7 @@
 '''
 给定m个数组,每个数组都已经按照升序排好序了。现在你需要从两个不同的数组中选择两个整数(每个数组选一个)并且计算它们的距离。两个整数a和b之间的距离定义为它们差的绝对值|a-b|。你的任务就是去找到最大距离
 '''
-def maxDistance(self, arrays: List[List[int]]) -> int:
+def maxDistance(arrays):
     min_val = arrays[0][0]
     max_val = arrays[0][-1]
     max_distance = 0
@@ -15,5 +15,12 @@ def maxDistance(self, arrays: List[List[int]]) -> int:
 
     return max_distance
 
+def main():
+    arr = [[1,2,3],[4,5],[1,2,3]]
+    distance = maxDistance(arr)
+    print("The Maximum Distance is: ", distance)
+
+if __name__ == "__main__":
+    main()
 
 
