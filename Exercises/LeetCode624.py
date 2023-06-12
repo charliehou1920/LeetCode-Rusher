@@ -16,7 +16,7 @@ def maxDistance(arrays):
     return max_distance
 
 def main():
-    arr = [[1,2,3],[4,5],[1,2,3]]
+    arr = [[0,1],[1,2,3],[4,5,6],[1,2,3]]
     distance = maxDistance(arr)
     print("The Maximum Distance is: ", distance)
 
